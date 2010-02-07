@@ -18,7 +18,7 @@
   echo "<h2 class='title'>Muro de Comentarios:</h2>";
 
  // echo " <iframe src ='http://tweetchat.com/room/$q' width='100%' height='300'>"; echo "</iframe>";
-  echo "<center><iframe src='http://twubs.com/ajax360/embed/$q/?headerBgColor=%229900&headerTextColor=%23FFFFFF&largeHeadshots' width='860' height='450' style='border:2px solid'><a href='http://twubs.com/$q'>#$q</a></iframe></center>";
+  echo "<center><iframe src='http://twubs.com/ajax360/embed/$q/?headerBgColor=%23204359&headerTextColor=%23FFFFFF&largeHeadshots' width='860' height='450' style='border:2px solid'><a href='http://twubs.com/$q'>#$q</a></iframe></center>";
 
  	mysql_close()
 
