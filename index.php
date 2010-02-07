@@ -1,3 +1,5 @@
+<?php session_start();?>
+
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <!--
 Design by Free CSS Templates
@@ -31,9 +33,14 @@ Released   : 20091213
 			<div id="menu">
 				<ul>
 					<li><a href="index.php" class="first">Inicio</a></li>
-					<li class="current_page_item"><a href="#">Nominaciones</a></li>
-					<li><a href="#">Votaciones</a></li>
+					<li class="current_page_item"><a href="nominaciones.php">Nominaciones</a></li>
 					<li><a href="registro.php">Registro</a></li>
+				      <li><a href="login.php">Login</a></li>
+					<?php
+					if ($_SESSION['usuario']!='') {
+						echo "<li><a href='logout.php'>{$_SESSION['usuario']} - Logout</a></li>";
+					}
+					?>
 				</ul>
 			</div>
 		</div>

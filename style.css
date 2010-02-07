@@ -343,7 +343,7 @@ hr { display: none; }
 
 a.hide {
 	text-decoration:none;
-	color:black;
+	color:gray;
 }
 
 #sidebar li li a {
