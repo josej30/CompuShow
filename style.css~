@@ -494,7 +494,6 @@ a.hide {
 }
 
 a.categvotos{
-	font-size: 14px;
-	color: #204359;
-	text-decoration: none;
+	color:#204359;
+	text-decoration:none;
 }

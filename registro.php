@@ -38,7 +38,7 @@
 	      <li><a href="login.php">Login</a></li>
 		<?php
 		if ($_SESSION['usuario']!='') {
-			echo "<li><a href='logout.php'>{$_SESSION['usuario']} - Logout</a></li>";
+						echo "<li><a href='logout.php'>{$_SESSION['usuario']} - <span style='color:red'>Logout</span></a></li>";
 		}
 		?>
 	    </ul>
@@ -74,26 +74,18 @@
 		<p>Tienes dos maneras de registrarte para las nominaciones y votaciones del CompuShow.</p>
 
 		<ol>
-		  <li><p>Si tienes cuenta de correo en el LDC llena el siguiente formulario.</p>
+		  <li><p>Si tienes cuenta de correo en el LDC llena el siguiente campo.</p>
 
 		<form id="registro" method="post" action="registrado.php">
 		  <table border=0>
 		    <tr>
-		      <td><b>Nombres</b></td>
-		      <td><input type="text" maxlength="20" name="nombres"></td>
-		      </tr>
-		    <tr>
-		      <td><b>Apellidos</b></td>
-		      <td><input type="text" maxlength="20" name="apellidos"></td>
-		      </tr>
-		    <tr>
-		      <td><b>Correo <a style="color:red">*</a></b></td>
+		      <td><b>Correo</b></td>
 		      <td><input type="text" maxlength="20" name="correo"></td>
+			<td><a style='color:red;'>Ejemplo:</a> usuario@ldc.usb.ve</td>
 		      </tr>
 		    </table>
 		    <br/><input type="submit" value="Registrarse"/>
 		    <br/><br/>
-		      <a style="color:red">*</a> Dirección de correo del LDC. Ejemplo: usuario@ldc.usb.ve
 		</form>
 		    <br/>
 		    <li><p>Si no tienes cuenta de correo asignada por el LDC, pasa por la sala de 

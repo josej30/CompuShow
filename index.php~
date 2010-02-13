@@ -38,7 +38,7 @@ Released   : 20091213
 				      <li><a href="login.php">Login</a></li>
 					<?php
 					if ($_SESSION['usuario']!='') {
-						echo "<li><a href='logout.php'>{$_SESSION['usuario']} - <span style='color:red'>Logout</span></a></li>";
+						echo "<li><a href='logout.php'><span style='color:red'>{$_SESSION['usuario']}</span> - Logout</a></li>";
 					}
 					?>
 				</ul>

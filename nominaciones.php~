@@ -39,11 +39,11 @@
         <li class="current_page_item"><a href="nominaciones.php">Nominaciones</a></li>
         <li><a href="registro.php">Registro</a></li>
         <li><a href="login.php">Login</a></li>
-	<?php
-		if ($_SESSION['usuario']!='') {
-			echo "<li><a href='logout.php'>{$_SESSION['usuario']} - <span style='color:red'>Logout</span></a></li>";
-		}
-	?>
+<?php
+if ($_SESSION['usuario']!='') {
+  echo "<li><a href='logout.php'>{$_SESSION['usuario']} - Logout</a></li>";
+}
+?>
       </ul>
     </div>
   </div>

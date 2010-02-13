@@ -78,6 +78,8 @@ $usuario = $temp1 . $temp2;
 
 mysql_query("UPDATE PERFIL SET email='$correo', password='$password' WHERE carnetP='$usuario'",$con);
 
+echo "UPDATE PERFIL SET (email, password) VALUES ('$correo', '$password') WHERE carnetP='$usuario'";
+
 //
 // Fin del acceso a la base de datos
 //
