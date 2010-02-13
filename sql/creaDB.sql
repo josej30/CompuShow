@@ -1,6 +1,6 @@
-create user 'compushow'@'localhost' identified by 'compushow';
+/*create user 'compushow'@'localhost' identified by 'compushow';
 create database compushow ;
-grant all privileges on compushow.* to 'compushow'@'localhost' with grant option;
+grant all privileges on compushow.* to 'compushow'@'localhost' with grant option;*/
  
 use compushow;
  
@@ -45,3 +45,4 @@ create table VOTOS(
   FOREIGN KEY (carnetNominado) REFERENCES NOMINACION(carnetNominado) ON DELETE CASCADE ON UPDATE CASCADE,
   FOREIGN KEY (carnetVotante) REFERENCES PERFIL(carnetP) ON DELETE CASCADE ON UPDATE CASCADE
 )
+ 

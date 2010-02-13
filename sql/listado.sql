@@ -1,3 +1,5 @@
+use compushow;
+
 insert into CATEGORIA (nombreC) VALUES ('COMPUPAPI');
 insert into CATEGORIA (nombreC) VALUES ('COMPUMAMI');
 insert into CATEGORIA (nombreC) VALUES ('COMPULOVE');
@@ -37,7 +39,7 @@ insert into CATEGORIA (nombreC) VALUES ('COMPUCHINAZO');
  insert into PERFIL (carnetP, apellidoP, nombreP) values(0335839,   'Deniz Vigil','Pedro Miguel');
  insert into PERFIL (carnetP, apellidoP, nombreP) values(0335858,   'Diz Montaño','Daniela');
  insert into PERFIL (carnetP, apellidoP, nombreP) values(0335867,   'Elneser Montiel',' Boris');
- insert into PERFIL (carnetP, apellidoP, nombreP) values(0335993,   'Grimán Cachutt','Lilian Caribay') 
+ insert into PERFIL (carnetP, apellidoP, nombreP) values(0335993,   'Grimán Cachutt','Lilian Caribay');
  insert into PERFIL (carnetP, apellidoP, nombreP) values(0336039,   'Hernández Ruiz','Alejandro José');
  insert into PERFIL (carnetP, apellidoP, nombreP) values(0336048,   'Hidalgo Sulbaran','Maria Gracia');
  insert into PERFIL (carnetP, apellidoP, nombreP) values(0336049,   'Hollando Dubuc','Mauricio');
@@ -205,7 +207,7 @@ insert into CATEGORIA (nombreC) VALUES ('COMPUCHINAZO');
  insert into PERFIL (carnetP, apellidoP, nombreP) values(0538983,   'Teran Martinez','Luis F');
  insert into PERFIL (carnetP, apellidoP, nombreP) values(0538988,   'Toledo Sanelli','Maria Milagros');
  insert into PERFIL (carnetP, apellidoP, nombreP) values(0538990,   'Torre Mora','Fernando  J');
- insert into PERFIL (carnetP, apellidoP, nombreP) values(0539001,   'Tovar Lanz','Alejandro Gabriel') 
+ insert into PERFIL (carnetP, apellidoP, nombreP) values(0539001,   'Tovar Lanz','Alejandro Gabriel');
  insert into PERFIL (carnetP, apellidoP, nombreP) values(0539011,   'Urbina Bermudez','Jorge G');
  insert into PERFIL (carnetP, apellidoP, nombreP) values(0539020,   'Valdes Graterol','Maria Gabriela');
  insert into PERFIL (carnetP, apellidoP, nombreP) values(0539031,   'Vazquez Valdez','Nohelia J');
@@ -487,7 +489,7 @@ insert into CATEGORIA (nombreC) VALUES ('COMPUCHINAZO');
  insert into PERFIL (carnetP, apellidoP, nombreP) values(0810804,   'Nuñez Michelena','Andel');
  insert into PERFIL (carnetP, apellidoP, nombreP) values(0810845,   'Parra Saavedra','Adriana Zuray');
  insert into PERFIL (carnetP, apellidoP, nombreP) values(0810852,   'Peñaranda Peñaranda','Roso Antonio');
- insert into PERFIL (carnetP, apellidoP, nombreP) values(0810860,   'Pereira Guerra','Geraldine Andrea') 
+ insert into PERFIL (carnetP, apellidoP, nombreP) values(0810860,   'Pereira Guerra','Geraldine Andrea');
  insert into PERFIL (carnetP, apellidoP, nombreP) values(0810881,   'Pinto Andrades','Aquilino Enrique');
  insert into PERFIL (carnetP, apellidoP, nombreP) values(0810885,   'Piñate Martinez','Diego Isaac');
  insert into PERFIL (carnetP, apellidoP, nombreP) values(0810918,   'Ramos Belisario','Maria Jose');

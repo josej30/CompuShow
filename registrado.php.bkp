@@ -20,7 +20,7 @@ if ($dominio != 'ldc.usb.ve') {
    	$_SESSION['ok'] = 1;
 }
 // Revisamos que ningun campo esta vacio
-if (empty($_POST["correo"])) {
+if (empty($_POST["nombres"]) | empty($_POST["apellidos"]) | empty($_POST["correo"])) {
 	$_SESSION['ok'] = 2;
 }
 // Revisamos que no este registrado el mail
@@ -43,7 +43,7 @@ if ($_SESSION['ok']==0){
    $_SESSION['pass'] = $password;
    // Se le envia el mail con sus datos
    $subject='Registro en la pagina del CompuShow';
-   $message='Hola,
+   $message='Hola '.$nombre.',
 
 Gracias por registrarte en la la pagina del CompuShow. Guarda este mensaje como recordatorio de tus datos. 
 
@@ -68,15 +68,15 @@ if (!$con)
   }
 
 mysql_select_db("compushow", $con);
+$nombres = $_POST["nombres"];
+$apellidos = $_POST["apellidos"];
 $correo = $_POST["correo"];
 $login = strtok($_POST["correo"],"@");
 
-$temp1 = substr($login,1,1);
-$temp2 = substr($login,3);
+$temp1 = substr($login,1,2);
+$temp2 = substr($login,4);
 
-$usuario = $temp1 . $temp2;
-
-mysql_query("UPDATE PERFIL SET email='$correo', password='$password' WHERE carnetP='$usuario'",$con);
+mysql_query("INSERT INTO PERFIL (nombreP, apellidoP, carnetP, email, password) VALUES ('$nombres', '$apellidos', '$login', '$correo', '$password')",$con);
 
 //
 // Fin del acceso a la base de datos

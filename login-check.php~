@@ -11,10 +11,7 @@ $row = mysql_fetch_array($data, MYSQL_ASSOC);
 
 if ($row['password']==$_POST['pass']){
 	$_SESSION['usuario'] = $row['carnetP'];
-	header("Location:index.php");
-}
-else{
-header("Location:login.php");
 }
 
+header("Location:index.php");
 ?>

@@ -19,6 +19,9 @@ Released   : 20091213
 <meta name="keywords" content="" />
 <meta name="description" content="" />
 <link href="style.css" rel="stylesheet" type="text/css" media="screen" />
+<script type="text/javascript" src="js/jquery.js"></script>   
+<script type="text/javascript" src="js/votaciones.js"></script>
+<script type="text/javascript" src="js/funciones.js"></script>
 </head>
 <body>
 <div id="wrapper">
@@ -49,34 +52,13 @@ Released   : 20091213
 		<div id="page">
 			<div id="content">
 				<div class="post">
-					<h2 class="title"><a href="#">Compushow 2010 </a></h2>
+					<h2 class="title"><a href="#">Votaciones del Compushow </a></h2>
 					<div class="entry">
-						<p>El Centro de Estudiantes de Ingeniería de la Computación les da la bienvenida al <b>Compushow 
-						2010.</b> Durante años se ha realizado este evento enmarcado en la <b>Semana de la Carrera</b> que
-						incluye otros eventos como charlas, exposiciones, infoelectivas, la compurumba, entre otras.
-						</p>
-						<p>El período de nominaciones para el CompuShow está actualmente vigente y termina el día XX de YY. Así 
-						que aprovecha y has las nominaciones lo antes posible. El período de votaciones se hará público una vez 
-						que finalice el período de las nominaciones.
-						</p>
-						<p>Esperamos que disfruten del evento que les tenemos preparado y que participen en las actividades 
-						programadas para su <b>Semana de la Carrera</b>.
-						</p>
-						<p><b>JD-CEIC</b></p>
-					</div>
-				</div>
-				<div class="post">
-					<h2 class="title"><a href="#">Pistas en la página del CompuShow</a></h2>
-					<div class="entry">
-						<p>Hemos desarrollado una serie de pistas que estarán escondidas (y otras no tan escondidas) en la página
-						que actualmente están viendo. Estas pistas les permitirán obtener información confidencial de las 
-						actividades que se están planificando para el CompuShow y algunas cosas más.
-						</p>
-						<p> Algunas ya están colocadas sólo esperando a que las encuentres y en los próximos días se colocarán
-						nuevas pistas con más información.
-						</p>
-						<p><b>JD-CEIC</b>
-						</p>
+
+					<p>Haz click en la categoría que desees para realizar tu voto.</p>
+
+					<?php include("sql/selectCategoriaVot.php");?>
+
 					</div>
 				</div>
 			</div>
