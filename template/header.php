@@ -12,7 +12,6 @@
         if ($_SESSION['usuario']!='') {
           echo "<li class='current_page_item'><a href='nominaciones.php'>Nominaciones</a></li>";
         }
-
         if ($_SESSION['usuario']=='') {
           echo "<li><a href='registro.php'>Registro</a></li>";
           echo "<li><a href='login.php'>Login</a></li>";

@@ -5,6 +5,7 @@ insert into CATEGORIA (nombreC) VALUES ('COMPUMAMI');
 insert into CATEGORIA (nombreC) VALUES ('COMPULOVE');
 insert into CATEGORIA (nombreC) VALUES ('COMPUCARTOON');
 insert into CATEGORIA (nombreC) VALUES ('COMPUCHINAZO');
+insert into CATEGORIA (nombreC) VALUES ('COMPUADOPTADO');
 
  insert into PERFIL (carnetP, apellidoP, nombreP) values(9931691,   'Duque Narvaez','Jorge E');
  insert into PERFIL (carnetP, apellidoP, nombreP) values(9931744,   'Flaviani Guastaferro','Federico');

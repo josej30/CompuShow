@@ -1,10 +1,16 @@
-<?php session_start();?>
+<?php 
+session_start();
+include("template/protegido.php");
+?>
+
 <html xmlns="http://www.w3.org/1999/xhtml">
   <head>
     <?php include("template/head.php")?>
-    <script type="text/javascript" src="js/nomCategoria.js"></script>
-    <script language="javascript" type="text/javascript" src="js/actb.js"></script>
-    <script language="javascript" type="text/javascript" src="js/common.js"></script>
+<script type="text/javascript" src="js/nomCategoria.js"></script>
+<script language="javascript" type="text/javascript" src="js/actb.js"></script>
+<script language="javascript" type="text/javascript" src="js/common.js"></script>
+<script>
+</script><br>
   </head>
   <body>
     <div id="wrapper">
@@ -22,15 +28,24 @@
 
               <?php include("sql/getPerfiles.php");?>
               <form action="sql/insertarNominacion.php" method="POST" >
-              <p><span>Nominado:</span><input type='text' style='font-family:verdana;width:300px;font-size:12px' id='nombreNominado' name='nombreNominado'/> 
-              <script> var obj = actb(document.getElementById('nombreNominado'),customarray);</script><br>
-        
+              <p><span>Nominado:</span><input type="text" style='font-family:verdana;width:300px;font-size:12px' id='nombreNominado' name='nombreNominado'/>
+<input type="hidden" id="agregar" value='+' onClick='agregarNominado()' />
+              <p style="margin-left: 5em;"><input type="hidden" style='font-family:verdana;width:300px;font-size:12px' id='nombreNominado2' name='nombreNominado2'/>
+              <p style="margin-left: 5em;"><input type="hidden" style='font-family:verdana;width:300px;font-size:12px' id='nombreNominado3' name='nombreNominado3'/>
+              <input type="hidden" value='Inserta la caricatura aqui' id='cartoon' name='cartoon'/>
+
+<script>
+var obj = actb(document.getElementById('nombreNominado'),customarray);
+var obj2 = actb(document.getElementById('nombreNominado2'),customarray);
+var obj3 = actb(document.getElementById('nombreNominado3'),customarray);
+</script>
+
               <p><span>Categoria:</span><?php include("sql/selectCategoria.php");?>
               <br><p><input type='submit' value="Enviar" id='tb'/> 
               </form>
               </p>
             </div>
-	          <div id="txtHint"></div>
+            <div id="txtHint"></div>
           </div>
         </div>
         <!-- end #content -->

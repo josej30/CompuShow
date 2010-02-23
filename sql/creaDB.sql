@@ -27,22 +27,21 @@ create table CATEGORIA(
  
 create table NOMINACION(
   categoria VARCHAR(20),
-  carnetNominado VARCHAR(8),
+  nombreNominado VARCHAR(200),
   carnetNominador VARCHAR(8),
-  PRIMARY KEY (categoria, carnetNominado, carnetNominador),
+  PRIMARY KEY (categoria, nombreNominado, carnetNominador),
   FOREIGN KEY (categoria) REFERENCES CATEGORIA(nombreC) ON DELETE CASCADE ON UPDATE CASCADE, 
-  FOREIGN KEY (carnetNominado) REFERENCES PERFIL(carnetP) ON DELETE CASCADE ON UPDATE CASCADE,
   FOREIGN KEY (carnetNominador) REFERENCES PERFIL(carnetP) ON DELETE CASCADE ON UPDATE CASCADE
 )
 ;
  
 create table VOTOS(
   categoria VARCHAR(20),
-  carnetNominado VARCHAR(8),
+  nombreNominado VARCHAR(200),
   carnetVotante VARCHAR(8),
-  PRIMARY KEY (categoria, carnetNominado, carnetVotante),
+  PRIMARY KEY (categoria, nombreNominado, carnetVotante),
   FOREIGN KEY (categoria) REFERENCES NOMINACION(categoria) ON DELETE CASCADE ON UPDATE CASCADE, 
-  FOREIGN KEY (carnetNominado) REFERENCES NOMINACION(carnetNominado) ON DELETE CASCADE ON UPDATE CASCADE,
+  FOREIGN KEY (nombreNominado) REFERENCES NOMINACION(nombreNominado) ON DELETE CASCADE ON UPDATE CASCADE,
   FOREIGN KEY (carnetVotante) REFERENCES PERFIL(carnetP) ON DELETE CASCADE ON UPDATE CASCADE
 )
  
