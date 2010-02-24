@@ -24,7 +24,7 @@ include("template/protegido.php");
               <h2 class="title"><a href="#">Nominaciones del Compushow</a></h2>
               <div class="entry">
 
-              <p> Escoja el nombre de la persona a la que desea nominar y la categoría asociada. A partir del número de nominaciones, se escogerán los 5 candidatos para avanzar a la próxima ronda.(<span style="color: red;">Importante:</span> Solo puede nominar a computistas(estudiantes y profesores), excepto para la categoría de compuadoptado)</p>
+              <p> Escoja el nombre de la persona a la que desea nominar y la categoría asociada. A partir del número de nominaciones, se escogerán los 5 candidatos para avanzar a la próxima ronda.(<span style="color: red;">Importante:</span> Solo puede nominar a computistas(estudiantes y profesores), excepto para la categoría de compuadoptado y compulove)</p>
 
               <?php include("sql/getPerfiles.php");?>
               <form action="sql/insertarNominacion.php" method="POST" >

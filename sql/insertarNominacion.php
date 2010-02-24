@@ -18,24 +18,16 @@ $sql = "SELECT * from PERFIL where CONCAT(nombreP, ' ', apellidoP) = '$nombre';"
 $result = mysql_query($sql) or die(mysql_error());
  
 //chequeo si es computista
-if (mysql_num_rows($result) == 0 && $categoria != "COMPUADOPTADO")  {
+if (mysql_num_rows($result) == 0 && $categoria != "COMPUADOPTADO" && $categoria != "COMPUADOPTADO" )  {
   echo "<script language=\"JavaScript\">{alert(\"La persona para esta categoria debe ser computista.\");location.href=\"$retorno\";}</script>";
 } else {
 
-  //Chequeo si los demas son computistas
   if ($categoria == "COMPULOVE") {
-    $sql = "SELECT * from PERFIL where CONCAT(nombreP, ' ', apellidoP) = '$nombre2' or CONCAT(nombreP, ' ', apellidoP) = '$nombre3' ;";
-    $result = mysql_query($sql) or die(mysql_error());
-    if (mysql_num_rows($result) == 0)  {
-      echo "<script language=\"JavaScript\">{alert(\"$sql.\");location.href=\"$retorno\";}</script>";
-    } else {
       $nombre = $nombre.', '.$nombre2.', '.$nombre3;
-    }
   }
 
   if ($categoria == "COMPUCARTOON") {
       $nombre = $nombre.'('.$cartoon.')';
-    
   }
 
   //Chequeo de que ya haya votado por esa persona
