@@ -33,9 +33,8 @@ include("template/protegido.php");
               <input type="text" style='font-family:verdana;width:300px;font-size:12px' id='nombreNominado' name='nombreNominado'/>
               <input type="hidden" id="agregar" value='+' onClick='agregarNominado()' />
               <p style="margin-left: 5em;"><input type="hidden" style='font-family:verdana;width:300px;font-size:12px' id='nombreNominado2' name='nombreNominado2'/>
-              <p style="margin-left: 5em;"><input type="hidden" style='font-family:verdana;width:300px;font-size:12px' id='nombreNominado3' name='nombreNominado3'/>
-              <input type="hidden" value='Inserta la caricatura aqui' id='cartoon' name='cartoon'/>
-
+              <p style="margin-left: 5em;"><input type="hidden" style='font-family:verdana;width:300px;font-size:12px' id='nombreNominado3' name='nombreNominado3'/></p>              
+              <p style="margin-left: 5em;"><input type="hidden" value='Inserta la caricatura aqui' id='cartoon' name='cartoon'/></p>
 <script>
 var obj = actb(document.getElementById('nombreNominado'),customarray);
 var obj2 = actb(document.getElementById('nombreNominado2'),customarray);
