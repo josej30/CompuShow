@@ -20,6 +20,7 @@
         if ($_SESSION['usuario']!='') {
           echo "<li><a href='logout.php'>{$_SESSION['usuario']} - <span style='color:red'>Logout</span></a></li>";
         }
+          echo "<li><a href='extra.php'>Extra</a></li>";
       ?>
     </ul>
   </div>

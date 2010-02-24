@@ -7,6 +7,36 @@ insert into CATEGORIA (nombreC) VALUES ('COMPUCARTOON');
 insert into CATEGORIA (nombreC) VALUES ('COMPUCHINAZO');
 insert into CATEGORIA (nombreC) VALUES ('COMPUADOPTADO');
 
+insert into PERFIL(carnetP, nombreP, apellidoP) values(01 ,'Prof Soraya',  'Abbad');                   
+insert into PERFIL(carnetP, nombreP, apellidoP) values(02 ,'Prof Angela',  'Diserio');
+insert into PERFIL(carnetP, nombreP, apellidoP) values(03 ,'Prof Blai',    'Bonet');
+insert into PERFIL(carnetP, nombreP, apellidoP) values(04 ,'Prof Carlos',  'Figueira');
+insert into PERFIL(carnetP, nombreP, apellidoP) values(05 ,'Prof Carolina','Chang');
+insert into PERFIL(carnetP, nombreP, apellidoP) values(06 ,'Prof Diego',   'Mosquera');
+insert into PERFIL(carnetP, nombreP, apellidoP) values(07 ,'Prof Edna',    'Ruckhaus');
+insert into PERFIL(carnetP, nombreP, apellidoP) values(08 ,'Prof Ernesto', 'Mendez');
+insert into PERFIL(carnetP, nombreP, apellidoP) values(09 ,'Prof Emilio',  'Hernandez');
+insert into PERFIL(carnetP, nombreP, apellidoP) values(10 ,'Prof Ernesto',    'Novich');
+insert into PERFIL(carnetP, nombreP, apellidoP) values(11 ,'Prof Gabriela','Montoya');
+insert into PERFIL(carnetP, nombreP, apellidoP) values(12 ,'Prof Gaby',    'Escuela');
+insert into PERFIL(carnetP, nombreP, apellidoP) values(13 ,'Prof Hilmar',  'Castro');
+insert into PERFIL(carnetP, nombreP, apellidoP) values(14 ,'Prof Ivette',  'Martinez');
+insert into PERFIL(carnetP, nombreP, apellidoP) values(15 ,'Prof Jesus',   'Ravelo');
+insert into PERFIL(carnetP, nombreP, apellidoP) values(16 ,'Prof Jose',    'Cadenas');
+insert into PERFIL(carnetP, nombreP, apellidoP) values(17 ,'Prof María',   'Vidal');
+insert into PERFIL(carnetP, nombreP, apellidoP) values(18 ,'Prof Mariela', 'Curiel');
+insert into PERFIL(carnetP, nombreP, apellidoP) values(19 ,'Prof Oscar',   'Meza');
+insert into PERFIL(carnetP, nombreP, apellidoP) values(20 ,'Prof Guillermo''Palma');        ,
+insert into PERFIL(carnetP, nombreP, apellidoP) values(21 ,'Prof Ricardo', 'Gonzalez');
+insert into PERFIL(carnetP, nombreP, apellidoP) values(22 ,'Prof Soraya',  'Carrasquel');
+insert into PERFIL(carnetP, nombreP, apellidoP) values(23 ,'Prof Victor',  'Theoktisto');
+insert into PERFIL(carnetP, nombreP, apellidoP) values(24 ,'Prof Victor',  'Theoktisto');
+insert into PERFIL(carnetP, nombreP, apellidoP) values(25 ,'Prof Prof',    'Pereira');
+insert into PERFIL(carnetP, nombreP, apellidoP) values(26 ,'Prof Xiomara', 'Contreras');
+insert into PERFIL(carnetP, nombreP, apellidoP) values(27 ,'Prof Jesus',   'de Oliveira');
+insert into PERFIL(carnetP, nombreP, apellidoP) values(28 ,'Prof Patricia','Guerrero');
+insert into PERFIL(carnetP, nombreP, apellidoP) values(29 ,'Prof Yudith',  'Cardinale');   
+
  insert into PERFIL (carnetP, apellidoP, nombreP) values(9931691,   'Duque Narvaez','Jorge E');
  insert into PERFIL (carnetP, apellidoP, nombreP) values(9931744,   'Flaviani Guastaferro','Federico');
  insert into PERFIL (carnetP, apellidoP, nombreP) values(9932385,   'Torres Bolivar','Juan C');
