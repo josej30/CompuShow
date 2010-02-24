@@ -27,7 +27,7 @@ if (mysql_num_rows($result) == 0 && $categoria != "COMPUADOPTADO")  {
     $sql = "SELECT * from PERFIL where CONCAT(nombreP, ' ', apellidoP) = '$nombre2' or CONCAT(nombreP, ' ', apellidoP) = '$nombre3' ;";
     $result = mysql_query($sql) or die(mysql_error());
     if (mysql_num_rows($result) == 0)  {
-      echo "<script language=\"JavaScript\">{alert(\"Las personas para esta categoria debe ser computista.\");location.href=\"$retorno\";}</script>";
+      echo "<script language=\"JavaScript\">{alert(\"$sql.\");location.href=\"$retorno\";}</script>";
     } else {
       $nombre = $nombre.', '.$nombre2.', '.$nombre3;
     }
