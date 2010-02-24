@@ -34,7 +34,7 @@ if (mysql_num_rows($result) == 0 && $categoria != "COMPUADOPTADO")  {
   }
 
   if ($categoria == "COMPUCARTOON") {
-      $nombre = $nombre.' ----> '.$cartoon;
+      $nombre = $nombre.'('.$cartoon.')';
     
   }
 

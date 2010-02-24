@@ -1,11 +1,20 @@
 use compushow;
 
-insert into CATEGORIA (nombreC) VALUES ('COMPUPAPI');
-insert into CATEGORIA (nombreC) VALUES ('COMPUMAMI');
-insert into CATEGORIA (nombreC) VALUES ('COMPULOVE');
-insert into CATEGORIA (nombreC) VALUES ('COMPUCARTOON');
-insert into CATEGORIA (nombreC) VALUES ('COMPUCHINAZO');
-insert into CATEGORIA (nombreC) VALUES ('COMPUADOPTADO');
+insert into CATEGORIA (nombreC, descripcion) VALUES ('COMPUPAPI','El mister de la carrera');
+insert into CATEGORIA (nombreC, descripcion) VALUES ('COMPUMAMI','La miss de la carrera');
+insert into CATEGORIA (nombreC, descripcion) VALUES ('COMPULOVE','Los computistas inseparables');
+insert into CATEGORIA (nombreC, descripcion) VALUES ('COMPUCARTOON','El computista que tiene un doble dibujado');
+insert into CATEGORIA (nombreC, descripcion) VALUES ('COMPUCHINAZO','La persona con la mente inconsciente mas cochina.');
+insert into CATEGORIA (nombreC, descripcion) VALUES ('COMPUADOPTADO','La persona que es quasi computista');
+insert into CATEGORIA (nombreC, descripcion) VALUES ('COMPULOLAS','Los cocos de la carrera');
+insert into CATEGORIA (nombreC, descripcion) VALUES ('COMPUBUTT','El backend de la carrera');
+insert into CATEGORIA (nombreC, descripcion) VALUES ('COMPUPREGUNTON', 'El computista más fastidioso en el salón de clase');
+insert into CATEGORIA (nombreC, descripcion) VALUES ('COMPUMORFEO','El computista que se duerme incluso en clases que no son del profesor Em..');
+insert into CATEGORIA (nombreC, descripcion) VALUES ('COMPUCHACARRON','El computista al que no se le entiende nada.');
+insert into CATEGORIA (nombreC, descripcion) VALUES ('COMPUPRODUCTISTA','Nos remitimos a videos de compushow pasados');
+insert into CATEGORIA (nombreC, descripcion) VALUES ('COMPADRE','El computista mas pana');
+insert into CATEGORIA (nombreC, descripcion) VALUES ('COMADRE','La computista mas panita');
+insert into CATEGORIA (nombreC, descripcion) VALUES ('COMPUMASTER','El mejor profesor.');
 
 insert into PERFIL(carnetP, nombreP, apellidoP) values(01 ,'Prof Soraya',  'Abbad');                   
 insert into PERFIL(carnetP, nombreP, apellidoP) values(02 ,'Prof Angela',  'Diserio');

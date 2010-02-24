@@ -20,7 +20,8 @@ create table PERFIL (
  
 create table CATEGORIA(
   nombreC VARCHAR(20) UNIQUE,
-  ganador varchar(40),
+  descripcion VARCHAR(200),
+  ganador VARCHAR(40),
   FOREIGN KEY (ganador) REFERENCES PERFIL(nombreP) ON DELETE CASCADE ON UPDATE CASCADE 
 )
 ;

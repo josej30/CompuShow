@@ -24,12 +24,14 @@ include("template/protegido.php");
               <h2 class="title"><a href="#">Nominaciones del Compushow</a></h2>
               <div class="entry">
 
-              <p> Escoja el nombre de la persona a la que desea nominar y la categoría asociada.</p>
+              <p> Escoja el nombre de la persona a la que desea nominar y la categoría asociada. A partir del número de nominaciones, se escogerán los 5 candidatos para avanzar a la próxima ronda.(<span style="color: red;">Importante:</span> Solo puede nominar a computistas(estudiantes y profesores), excepto para la categoría de compuadoptado)</p>
 
               <?php include("sql/getPerfiles.php");?>
               <form action="sql/insertarNominacion.php" method="POST" >
-              <p><span>Nominado:</span><input type="text" style='font-family:verdana;width:300px;font-size:12px' id='nombreNominado' name='nombreNominado'/>
-<input type="hidden" id="agregar" value='+' onClick='agregarNominado()' />
+              <p><span>Categoria:</span><?php include("sql/selectCategoria.php");?>
+              <p><span>Nominado:</span>
+              <input type="text" style='font-family:verdana;width:300px;font-size:12px' id='nombreNominado' name='nombreNominado'/>
+              <input type="hidden" id="agregar" value='+' onClick='agregarNominado()' />
               <p style="margin-left: 5em;"><input type="hidden" style='font-family:verdana;width:300px;font-size:12px' id='nombreNominado2' name='nombreNominado2'/>
               <p style="margin-left: 5em;"><input type="hidden" style='font-family:verdana;width:300px;font-size:12px' id='nombreNominado3' name='nombreNominado3'/>
               <input type="hidden" value='Inserta la caricatura aqui' id='cartoon' name='cartoon'/>
@@ -40,12 +42,11 @@ var obj2 = actb(document.getElementById('nombreNominado2'),customarray);
 var obj3 = actb(document.getElementById('nombreNominado3'),customarray);
 </script>
 
-              <p><span>Categoria:</span><?php include("sql/selectCategoria.php");?>
-              <br><p><input type='submit' value="Enviar" id='tb'/> 
+            <input type='submit' value="Enviar" id='tb'/> 
               </form>
               </p>
             </div>
-            <div id="txtHint"></div>
+              <div id="txtHint"></div>
           </div>
         </div>
         <!-- end #content -->
