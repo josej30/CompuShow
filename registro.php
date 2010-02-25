@@ -14,36 +14,12 @@
   -->
 <html xmlns="http://www.w3.org/1999/xhtml">
   <head>
-    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
-    <title>CompuShow 2010</title>
-    <meta name="keywords" content="" />
-    <meta name="description" content="" />
-    <link href="style.css" rel="stylesheet" type="text/css" media="screen" />
+    <?php include("template/head.php")?>
   </head>
   <body>
     <div id="wrapper">
       <div id="wrapper-bgtop">
-	<div id="header">
-	  <div id="logo">
-	    <h1><a href="#">CompuShow</a></h1>
-	    <p><em>CEIC USB</em></p>
-	  </div>
-	  <hr />
-	  <!-- end #logo -->
-	  <div id="menu">
-	    <ul>
-	      <li><a href="index.php" class="first">Inicio</a></li>
-	      <li class="current_page_item"><a href="nominaciones.php">Nominaciones</a></li>
-	      <li><a href="registro.php">Registro</a></li>
-	      <li><a href="login.php">Login</a></li>
-		<?php
-		if ($_SESSION['usuario']!='') {
-						echo "<li><a href='logout.php'>{$_SESSION['usuario']} - <span style='color:red'>Logout</span></a></li>";
-		}
-		?>
-	    </ul>
-	  </div>
-	</div>
+    <?php include("template/header.php")?>
 	<!-- end #header -->
 	<!-- end #header-wrapper -->
 	<div id="page">
@@ -101,12 +77,8 @@
 	<!-- end #page -->
       </div>
     </div>
-    <div id="footer-bgcontent">
-      <div id="footer">
-	<p>Diseñado por <a href="http://www.freecsstemplates.org/">Free 
-	    CSS Templates</a> y modificaciones por <a href="http://ceic.ldc.usb.ve">CEIC-USB</a>.</p>
-      </div>
-    </div>
+
+    <?php include("template/footer.php")?>
     <!-- end #footer -->
   </body>
 </html>

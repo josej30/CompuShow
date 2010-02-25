@@ -1,0 +1,6 @@
+[13-Feb-2010 18:07:19] PHP Notice:  Undefined variable: result in /var/www/html/compushow/sql/insertarNominacion.php on line 18
+[13-Feb-2010 18:07:19] PHP Stack trace:
+[13-Feb-2010 18:07:19] PHP   1. {main}() /var/www/html/compushow/sql/insertarNominacion.php:0
+[13-Feb-2010 18:08:23] PHP Notice:  Undefined variable: result in /var/www/html/compushow/sql/insertarNominacion.php on line 18
+[13-Feb-2010 18:08:23] PHP Stack trace:
+[13-Feb-2010 18:08:23] PHP   1. {main}() /var/www/html/compushow/sql/insertarNominacion.php:0
