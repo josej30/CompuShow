@@ -48,12 +48,11 @@ var obj3 = actb(document.getElementById('nombreNominado3'),customarray);
               <div id="txtHint"></div>
           </div>
         </div>
-<<<<<<< HEAD:nominaciones.php
-	    <div id="txtHint"></div>
-=======
+
+
         <!-- end #content -->
         <div style="clear: both;">&nbsp;</div>
->>>>>>> 80cacb6557f75620b53506d07665353a53c953a8:nominaciones.php
+
       </div>
       <!-- end #page -->
     </div>

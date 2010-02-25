@@ -18,7 +18,6 @@ include("template/protegido.php");
         <?php include("template/header.php")?>
         <!-- end #header -->
 
-
         <div id="page">
           <div id="content">
             <div class="post">
