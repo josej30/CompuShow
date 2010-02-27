@@ -51,7 +51,6 @@ Released   : 20091213
 		<!-- end #page -->
 	</div>
 </div>
-<<<<<<< HEAD:votaciones.php
 <div id="footer-bgcontent">
 	<div id="footer">
 		<p>Diseñado por <a href="http://www.freecsstemplates.org/">Free 
@@ -59,9 +58,6 @@ CSS Templates</a> y modificaciones por <a href="http://ceic.ldc.usb.ve">CEIC-USB
 	</div>
 </div>
 <!-- end #footer -->
-<a class="hide" href="pista1.html">:)</a>
-=======
   <?php include("template/footer.php")?>
->>>>>>> 80cacb6557f75620b53506d07665353a53c953a8:votaciones.php
 </body>
 </html>

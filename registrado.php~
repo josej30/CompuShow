@@ -54,9 +54,8 @@ Gracias por registrarte en la la pagina del CompuShow. Guarda este mensaje como 
 CEIC 2010
 Universidad Simon Bolivar';
 
-if (mail($correo,$subject,$message) == -1)  {
-	echo "Error al eviar el mail";
-}
+mail($correo,$subject,$message);
+
 
 //
 // Agregando los datos en la base de datos
@@ -77,8 +76,6 @@ $temp2 = substr($login,3);
 $usuario = $temp1 . $temp2;
 
 mysql_query("UPDATE PERFIL SET email='$correo', password='$password' WHERE carnetP='$usuario'",$con);
-
-echo "UPDATE PERFIL SET (email, password) VALUES ('$correo', '$password') WHERE carnetP='$usuario'";
 
 //
 // Fin del acceso a la base de datos

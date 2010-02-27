@@ -28,9 +28,10 @@ Released   : 20091213
 					<div class="entry">
 						<p>El Centro de Estudiantes de Ingeniería de la Computación les da la bienvenida al <b>Compushow 
 						2010.</b> Durante años se ha realizado este evento enmarcado en la <b>Semana de la Carrera</b> que
-						incluye otros eventos como charlas, exposiciones, infoelectivas, la compurumba, entre otras.
+						incluye otros eventos como charlas, exposiciones, infoelectivas, la compurumba, entre otras. El día del
+						evento es el 17 de Marzo de 2010.
 						</p>
-						<p>El período de nominaciones para el CompuShow está actualmente vigente y termina el día XX de YY. Así 
+						<p>El período de nominaciones para el CompuShow está actualmente vigente y termina el día 10 de Marzo. Así 
 						que aprovecha y has las nominaciones lo antes posible. El período de votaciones se hará público una vez 
 						que finalice el período de las nominaciones.
 						</p>
@@ -41,17 +42,25 @@ Released   : 20091213
 					</div>
 				</div>
 				<div class="post">
-					<h2 class="title"><a href="#">Pistas en la página del CompuShow</a></h2>
+					<h2 class="title"><a href="#">Semana de la Carrera </a></h2>
 					<div class="entry">
-						<p>Hemos desarrollado una serie de pistas que estarán escondidas (y otras no tan escondidas) en la página
-						que actualmente están viendo. Estas pistas les permitirán obtener información confidencial de las 
-						actividades que se están planificando para el CompuShow y algunas cosas más.
+						<p>Aprovechamos la oportunidad para recordarles los eventos que tenemos preparados para la Semana de
+						la Carrera.
 						</p>
-						<p> Algunas ya están colocadas sólo esperando a que las encuentres y en los próximos días se colocarán
-						nuevas pistas con más información.
+						<p>
+						<ul>
+						<li><b>Lunes de Semana 10 - Infocadenas:</b> Es un evento en el cual se reúnen los profesores de todas las
+						especializaciones (cadenas) que ofrece la carrera de Ingeniería de la Computación. La finalidad es
+						presentarles información a los alumnos acerca de cada una de las ramas que ofrece la carrera para que tomen
+						su desición al momento de especializarse.
+						<li><b>Miércoles de Semana 10 - Compushow:</b> Es el evento creado por los estudiantes y para los 							estudiantes de Ingeniería de la Computación de la USB. Risas, bromas, shows, entre muchas cosas más te
+						esperan ese día; porque no todo es estudiar en la carrera.
+						<li><b>Jueves de Semana 10 - CompuRumba:</b> ¡La rumba del año! Disfruta junto a tus panas de una rumbita
+						para liberar toda el stress de las colas, los exámenes, etc. Además contaremos con la participación de
+						las carreras de Ing. Producción e Ing. Mecánica.
+						</ul>
 						</p>
-						<p><b>JD-CEIC</b>
-						</p>
+						<p><b>JD-CEIC</b></p>
 					</div>
 				</div>
 			</div>

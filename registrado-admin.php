@@ -14,33 +14,29 @@ function generaPass() {
   }
   return $pass;
 }
-// Revisamos que el correo sea del ldc
-$dominio = substr($_POST["correo"], -10);
-if ($dominio != 'ldc.usb.ve') {
-   	$_SESSION['ok'] = 1;
-}
+
+$carnet = $_POST["carnet"];
+
 // Revisamos que ningun campo esta vacio
-if (empty($_POST["correo"])) {
+if (empty($_POST["carnet"])) {
 	$_SESSION['ok'] = 2;
 }
-// Revisamos que no este registrado el mail
+// Revisamos que no este registrado el carnet
 $con = mysql_connect("localhost","compushow","compushow");
 if (!$con)
   {
   die('Could not connect: ' . mysql_error());
   }
 mysql_select_db("compushow", $con);
-$correo = $_POST["correo"];
-$data = mysql_query("SELECT * FROM PERFIL WHERE email='$correo'",$con);
+$data = mysql_query("SELECT * FROM PERFIL WHERE carnetP='$carnet'",$con);
 $info = mysql_fetch_array($data);
-if (sizeof($info) != 1) {
+if (isset($info["nombreP"])) {
     $_SESSION['ok'] = 3;
 }
 
 // Si no ocurre ningun error continuamos aca
 if ($_SESSION['ok']==0){
    $password = generaPass();
-   $_SESSION['pass'] = $password;
    // Se le envia el mail con sus datos
    $subject='Registro en la pagina del CompuShow';
    $message='Hola,
@@ -60,22 +56,10 @@ mail($correo,$subject,$message);
 //
 // Agregando los datos en la base de datos
 //
-$con = mysql_connect("localhost","compushow","compushow");
-if (!$con)
-  {
-  die('Could not connect: ' . mysql_error());
-  }
-
-mysql_select_db("compushow", $con);
 $correo = $_POST["correo"];
 $login = strtok($_POST["correo"],"@");
 
-$temp1 = substr($login,1,1);
-$temp2 = substr($login,3);
-
-$usuario = $temp1 . $temp2;
-
-mysql_query("UPDATE PERFIL SET email='$correo', password='$password' WHERE carnetP='$usuario'",$con);
+mysql_query("UPDATE PERFIL SET email='$correo', password='$password' WHERE carnetP='$carnet'",$con);
 
 //
 // Fin del acceso a la base de datos
@@ -83,5 +67,5 @@ mysql_query("UPDATE PERFIL SET email='$correo', password='$password' WHERE carne
 
 $_SESSION['ok'] = 10;
 }
-header("Location:registro.php");
+header("Location:registroadmin.php");
 ?>
