@@ -75,6 +75,8 @@ $temp2 = substr($login,3);
 
 $usuario = $temp1 . $temp2;
 
+echo $usuario."<br>";
+
 mysql_query("UPDATE PERFIL SET email='$correo', password='$password' WHERE carnetP='$usuario'",$con);
 
 //
