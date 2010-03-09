@@ -21,8 +21,17 @@ Released   : 20091213
   <div id="wrapper-bgtop">
     <?php include("template/header.php")?>
 				<!-- end #header -->
+
 		<div id="page">
 			<div id="content">
+				<?
+				if ($_SESSION['voto']==1){
+					echo "<strong><p><span style='color:red;'>Sólo puedes votar una vez. 
+						Tu cuenta ya ha realizado sus votos.</span><br/> Si quieres saber los resutados de las votaciones, 
+						entonces vé al CompuShow! Miércoles de Semana 10, 4:00pm</p></strong>";
+					$_SESSION['voto'] = 0;
+				}
+				?>
 				<div class="post">
 					<h2 class="title"><a href="#">Compushow 2010 </a></h2>
 					<div class="entry">

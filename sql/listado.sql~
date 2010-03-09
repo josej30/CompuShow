@@ -35,7 +35,7 @@ insert into PERFIL(carnetP, nombreP, apellidoP) values(16 ,'Prof Jose',    'Cade
 insert into PERFIL(carnetP, nombreP, apellidoP) values(17 ,'Prof María',   'Vidal');
 insert into PERFIL(carnetP, nombreP, apellidoP) values(18 ,'Prof Mariela', 'Curiel');
 insert into PERFIL(carnetP, nombreP, apellidoP) values(19 ,'Prof Oscar',   'Meza');
-insert into PERFIL(carnetP, nombreP, apellidoP) values(20 ,'Prof Guillermo''Palma');        ,
+insert into PERFIL(carnetP, nombreP, apellidoP) values(20 ,'Prof Guillermo','Palma');        
 insert into PERFIL(carnetP, nombreP, apellidoP) values(21 ,'Prof Ricardo', 'Gonzalez');
 insert into PERFIL(carnetP, nombreP, apellidoP) values(22 ,'Prof Soraya',  'Carrasquel');
 insert into PERFIL(carnetP, nombreP, apellidoP) values(23 ,'Prof Victor',  'Theoktisto');

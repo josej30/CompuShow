@@ -1,6 +1,7 @@
 use compushow;
-
+ 
 insert into CATEGORIA (nombreC, descripcion) VALUES ('COMPUPAPI','El mister de la carrera');
+insert into CATEGORIA (nombreC, descripcion) VALUES ('COMPUGALLO','El computista que lo unico que hace es estudiar');
 insert into CATEGORIA (nombreC, descripcion) VALUES ('COMPUMAMI','La miss de la carrera');
 insert into CATEGORIA (nombreC, descripcion) VALUES ('COMPULOVE','Los computistas inseparables');
 insert into CATEGORIA (nombreC, descripcion) VALUES ('COMPUCARTOON','El computista que tiene un doble dibujado');
@@ -15,7 +16,7 @@ insert into CATEGORIA (nombreC, descripcion) VALUES ('COMPUPRODUCTISTA','Nos rem
 insert into CATEGORIA (nombreC, descripcion) VALUES ('COMPADRE','El computista mas pana');
 insert into CATEGORIA (nombreC, descripcion) VALUES ('COMADRE','La computista mas panita');
 insert into CATEGORIA (nombreC, descripcion) VALUES ('COMPUMASTER','El mejor profesor.');
-
+ 
 insert into PERFIL(carnetP, nombreP, apellidoP) values(01 ,'Prof Soraya',  'Abbad');                   
 insert into PERFIL(carnetP, nombreP, apellidoP) values(02 ,'Prof Angela',  'Diserio');
 insert into PERFIL(carnetP, nombreP, apellidoP) values(03 ,'Prof Blai',    'Bonet');
@@ -45,7 +46,7 @@ insert into PERFIL(carnetP, nombreP, apellidoP) values(26 ,'Prof Xiomara', 'Cont
 insert into PERFIL(carnetP, nombreP, apellidoP) values(27 ,'Prof Jesus',   'de Oliveira');
 insert into PERFIL(carnetP, nombreP, apellidoP) values(28 ,'Prof Patricia','Guerrero');
 insert into PERFIL(carnetP, nombreP, apellidoP) values(29 ,'Prof Yudith',  'Cardinale');   
-
+ 
  insert into PERFIL (carnetP, apellidoP, nombreP) values(9931691,   'Duque Narvaez','Jorge E');
  insert into PERFIL (carnetP, apellidoP, nombreP) values(9931744,   'Flaviani Guastaferro','Federico');
  insert into PERFIL (carnetP, apellidoP, nombreP) values(9932385,   'Torres Bolivar','Juan C');
